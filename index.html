@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini Store</h1>
+    <div id="cart">🛒 Cart: <span id="cart-count">0</span></div>
+  </header>
+
+  <main>
+    <div class="product" id="product1">
+      <img src="https://via.placeholder.com/150" alt="Product 1"/>
+      <h2>Product 1</h2>
+      <p>₹499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product" id="product2">
+      <img src="https://via.placeholder.com/150" alt="Product 2"/>
+      <h2>Product 2</h2>
+      <p>₹799</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
