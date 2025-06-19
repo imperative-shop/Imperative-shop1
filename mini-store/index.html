@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="checkLogin()">
+  <header>
+    <h1>Mini Store</h1>
+    <div id="user">Welcome!</div>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <div class="product">
+      <h2>Product A</h2>
+      <p>₹499</p>
+      <button onclick="addToCart('Product A', 499)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <h2>Product B</h2>
+      <p>₹899</p>
+      <button onclick="addToCart('Product B', 899)">Add to Cart</button>
+    </div>
+    <a href="checkout.html" class="checkout-link">Go to Checkout</a>
+  </main>
+
+  <script src="auth.js"></script>
+  <script src="store.js"></script>
+</body>
+</html>
